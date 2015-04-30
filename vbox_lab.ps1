@@ -112,7 +112,7 @@ function LoadMenuSystem() {
 						& "$VBoxManage" startvm "$switch_start" 
 					}
 				}
-				default{}
+				default{break}
 			}
 		}
 		default {$global:xExitSession = $true;break}
