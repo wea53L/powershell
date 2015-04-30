@@ -63,8 +63,8 @@ function LoadMenuSystem() {
 
 				Write-Host "`t`t"$quit_option "..`n"
 				
-				[int]$xMenu2 = Read-Host "`t`tEnter Option Number"
-				if ($xMenu2 -lt 1 -or $xMenu2 -gt $quit_option) {
+				$xMenu2 = Read-Host "`t`tEnter Option Number"
+				if ($xMenu2 -lt 1 -or $xMenu2 -gt $quit_option -or $xMenu2 -isnot [int]) {
 					Write-Host "`tPlease select one of the listed options.`n" -Fore Red; start-Sleep -Seconds 1
 				}
 			}
@@ -99,8 +99,8 @@ function LoadMenuSystem() {
 
 				Write-Host "`t`t"$quit_option "..`n"
 				
-				[int]$xMenu2 = Read-Host "`t`tEnter Option Number"
-				if ($xMenu2 -lt 1 -or $xMenu2 -gt $quit_option) {
+				$xMenu2 = Read-Host "`t`tEnter Option Number"
+				if ($xMenu2 -lt 1 -or $xMenu2 -gt $quit_option -or $xMenu2 -isnot [int]) {
 					Write-Host "`tPlease select one of the listed options.`n" -Fore Red; start-Sleep -Seconds 1
 				}
 			}
